@@ -12,7 +12,7 @@ for fileName in fileList:
         splittedFileName.insert(len(splittedFileName)-1,splittedFileName[0])
         del splittedFileName[0]
         newFileName = '.'.join(splittedFileName)
-        print('Was: ', FileName,'\n', 'Now: ', newFileName, '\n')
+        print('Was: ', fileName,'\n', 'Now: ', newFileName, '\n')
         n += 1
         rename(fileName,newFileName) 
 print(n, ' file(s) was renamed', '\n')
